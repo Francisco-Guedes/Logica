@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario</title>
+</head>
+<body>
+<script>
+    var salfix=parseInt(prompt("Qual o seu salário fixo?: "));
+    var valortot=parseInt(prompt("Qual o valor total de suas vendas?: "));
+    var final
+        if (valortot>1500){
+            final = salfix + (0.03 * 1500 + ((valortot - 1500) * 0.05));
+        }
+        else{
+            final = (salfix*0.03)+salfix
+        }
+        alert ("O salário total deste mês corresponde a: R$"+final);
+</script>
+</body>
+</html>

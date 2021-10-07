@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votos</title>
+</head>
+
+<body>
+
+    <script>
+
+        var validos=parseInt(prompt("Informe a quantidade de votos válidos:"));
+        var brancos=parseInt(prompt("Informe a quantidade de votos brancos:"));
+        var nulos=parseInt(prompt("Informe a quantidade de votos nulos"));
+        var total1= validos+nulos+brancos;
+        var porcemT= total1/100;
+        var porcemV= (validos*100)/total1;
+        var porcemB= (brancos*100)/total1;
+        var porcemN = (nulos*100)/total1;
+        alert("A quantia de eleitores é: " +total1);
+        alert("A quantia de votos Válidos representa:" +porcemV, "% dos votos totais");
+        alert("A quantia de votos Brancos representa:" +porcemB, "% dos votos totais");
+        alert("A quantia de votos Nulos representa:" +porcemN, "% dos votos totais");
+    </script>
+</body>
+
+</html>

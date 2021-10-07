@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestação</title>
+</head>
+<body>
+<script>
+    var valor=parseInt(prompt("Qual o valor da prestação?: "))
+    var tempo=parseInt(prompt("A prestação está atrasada em quantos dias?: "))
+    var taxa=parseInt(prompt("Qual a porcentagem da taxa por dia de atraso?: "))
+    var prestacao= valor+ ((valor*taxa/100)*tempo);
+    alert ("O valor final da prestação corresponde a: R$"+prestacao)
+</script>
+
+</body>
+</html>

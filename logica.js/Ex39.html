@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xadrez</title>
+</head>
+<body>
+<script>
+    var h1=parseInt(prompt("Informe a hora de inicio do jogo: "))
+    var h2=parseInt(prompt("Informe a hora de termino do jogo: "))
+        if (h1 === h2){
+            var total=24          
+        }
+        else if (h1>h2){
+            var total=(24-h1)+h2
+        }
+        else{
+            var total = h2-h1
+        }
+        alert("O jogo teve uma duração total de: "+total+" horas.")
+</script>
+
+</body>
+</html>

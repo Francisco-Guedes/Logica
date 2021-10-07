@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+</head>
+<body>
+<script>
+    var produto=prompt("Qual o produto que deseja consultar?: ");
+    var atual=parseInt(prompt("Qual a quantidade atual do produto em estoque?: "));
+    var maxima=parseInt(prompt("Qual a capacidade máxima do estoque?: "));
+    var minima=parseInt(prompt("Qual a quantidade mínima do estoque?: "));
+    var media= (maxima+minima)/2;
+        if (atual>=media){
+            alert ("Não efetuar compra.");
+        }
+        else{
+            alert ("Efetuar compra.");
+        }
+</script>
+</body>
+</html>
